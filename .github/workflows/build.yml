@@ -1,0 +1,13 @@
+on: push
+
+jobs:
+  buildForWindows:
+    runs-on: windows-latest
+    steps:
+      - name: 读取仓库内容🤔
+      - uses: actions/checkout@v4
+      - uses: tauri-apps/tauri-action@v0
+      - name: 安装依赖📦
+        run: pnpm install
+      - name: 构建🔨
+        run: pnpm run build
