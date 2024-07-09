@@ -10,6 +10,7 @@ jobs:
       - name: 读取仓库内容📂
         uses: actions/checkout@v4
       - name: 安装依赖📦
-        run: pnpm install
+        run: npm install -g pnpm
+          pnpm install
       - name: 构建🔨
         run: pnpm run build
