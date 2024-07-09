@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --left-bg-color: rgba(32, 29, 29, 0.757);
+  --left-active-color: rgba(193, 193, 193, 0.1);
+  --content-bg-color: #ffffff;
+  --text-color: rgba(7, 6, 6, 0.746);
+}
+
+html[data-theme="dark"] {
+  --left-bg-color: rgba(32, 29, 29, 0.757);
+  --left-active-color: rgba(193, 193, 193, 0.1);
+  --content-bg-color: #1b1b1b;
+  --text-color: rgba(216, 214, 214, 0.852);
+}
