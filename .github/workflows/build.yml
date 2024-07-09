@@ -1,11 +1,12 @@
-on: push
+on:
+  push:
+    branches:
+      - release
 
 jobs:
   buildForWindows:
     runs-on: windows-latest
     steps:
-      - name: 读取仓库内容🤔
-        uses: actions/checkout@v4
       - name: 设置 Tauri Action
         uses: tauri-apps/tauri-action@v0
       - name: 安装依赖📦
