@@ -3,7 +3,7 @@ import TopBar from "../../components/windows/TopBar";
 import { useGlobalStore } from "../../stores";
 // 这里写死的，后面功能多了再重写
 export default function Setting() {
-    const { darkMode, setDarkMode } = useGlobalStore();
+    const { setDarkMode } = useGlobalStore();
     return (
         <>
             <div className='flex w-screen h-screen '>

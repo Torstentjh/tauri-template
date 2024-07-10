@@ -1,6 +1,6 @@
 import { CloseOutlined, FullscreenExitOutlined, FullscreenOutlined, MinusOutlined } from '@ant-design/icons';
 import { appWindow } from '@tauri-apps/api/window';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 
 export default function TopBar() {
     const restoreWindow = async () => {

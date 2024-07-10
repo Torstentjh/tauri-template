@@ -1,7 +1,4 @@
-import { LogicalSize, WebviewWindow } from '@tauri-apps/api/window'
-import { invoke } from '@tauri-apps/api/tauri'
-
-import { useEffect } from 'react'
+import { LogicalSize, WebviewWindow } from '@tauri-apps/api/window';
 
 export const useWindow = () => {
     /**
